@@ -1,4 +1,5 @@
 
+// shirtOne and shirtTwo are being initalized with color and size properties
 var shirtOne = new Shirt({ color: 'blue', large: 5, small: 8 });
 var shirtTwo = new Shirt({ color: 'green', large: 2, medium: 11 });
 
