@@ -7,7 +7,7 @@
     initialize: function () {
       this.listenTo(this.model, 'change', this.render);
     },
-
+d
     className: 'shirt',
     render: function () {
       // TODO: Complete the following line
