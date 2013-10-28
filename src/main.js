@@ -1,24 +1,37 @@
 
-var bookOne = new Book({ 
-	title: "Twilight",
-	author: "Team Edward",
-	price: "50"
+var messageOne = new Message({ 
+	reason: "When you sleep so soundly"
 });
 
-var bookTwo = new Book({ 
-	title: "Qi Vamps",
-	author: "Mystic Medusa",
-	price: "2"
+var messageTwo = new Message({
+	reason: "Ice cream in bed"
 });
-	
 
-var books = [bookOne, bookTwo];
+var messageThree = new Message({ 
+	reason: "Wanting to suck on my nose"
+});
 
-// Create a view for each book and add that view's element to the page.
-_.each(books, function (book) {
-  var view = new BookView({ 
-  	model: book // class for div in html
+var messageFour = new Message({
+	reason: "Walking to food trucks"
+});
+
+var messageFive = new Message({
+	reason: "When you spoon me"
+});
+
+var messageSix = new Message({
+	reason: "Ice cream in bed"
+});
+
+
+
+var messages = [messageOne, messageTwo, messageThree, messageFour, messageFive, messageSix];
+
+// Create a view for each message and add that view's element to the page.
+_.each(messages, function (message) {
+  var view = new MessageView({ 
+  	model: message // class for div in html
   });
   view.render();
-  $('#books').append(view.el); 
+  $('#messages').append(view.el); 
 });

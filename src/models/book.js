@@ -1,6 +1,6 @@
 (function () {
 
-  window.Book = Backbone.Model.extend({
+  window.Message = Backbone.Model.extend({
     // Blank; this is intentional. It still works.
   });
 

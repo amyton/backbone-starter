@@ -1,20 +1,20 @@
 (function () {
 
-  var bookTemplateHtml = $('#templates .book').html();
-  var bookTemplate = _.template(bookTemplateHtml);
+  var messageTemplateHtml = $('#templates .message').html();
+  var messageTemplate = _.template(messageTemplateHtml);
 
-  window.BookView = Backbone.View.extend({
-    // adds a book class to the view's default element
-    className: "book",
+  window.MessageView = Backbone.View.extend({
+    // adds a message class to the view's default element
+    className: "message",
     events: {
-      "click .buy": "buy"
+      // "click .buy": "buy"
     },
     buy: function (e) {
       console.log("clicked buy?");
     },
     render: function () {
-      var newBookHtml = bookTemplate( this.model.toJSON() );
-      $(this.el).html(newBookHtml);
+      var newMessageHtml = messageTemplate( this.model.toJSON() );
+      $(this.el).html(newMessageHtml);
     }
   });
 
